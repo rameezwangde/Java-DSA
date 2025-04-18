@@ -6,25 +6,42 @@ public class PostfixToInfix {
     public static void main(String[] args) {
         String postfix = "ab-de+f*/";
         String infix = postfixToInfix(postfix);
-        System.out.println("Infix: " + infix); // Expected: ((a + b) * c)
+        System.out.println("Infix: " + infix); // Output: ((a - b) / ((d + e) * f))
     }
-    public static boolean isOperator(char ch) {
-        return ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch=='^';
 
+    // Utility function to check if a character is an operator
+    public static boolean isOperator(char ch) {
+        return ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '^';
     }
-    public static String postfixToInfix(String s){
+
+    // Function to convert postfix expression to infix
+    public static String postfixToInfix(String s) {
         Stack<String> st = new Stack<>();
-        for(int i=0;i<s.length();i++){
+
+        // Traverse the postfix expression from left to right
+        for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if(Character.isLetterOrDigit(ch)){
-                st.push(ch+"");
-            }else if(isOperator(ch)){
-                String b=st.pop();
-                String a=st.pop();
-                String exp="("+a+" "+ch+" "+b+")";
+
+            // If the character is an operand (letter or digit), push it to the stack
+            if (Character.isLetterOrDigit(ch)) {
+                st.push(ch + ""); // Convert char to string and push
+            } 
+            // If the character is an operator
+            else if (isOperator(ch)) {
+                // Pop two operands from the stack
+                String operand2 = st.pop(); // Right operand
+                String operand1 = st.pop(); // Left operand
+
+                // Combine them into an infix expression with parentheses
+                String exp = "(" + operand1 + " " + ch + " " + operand2 + ")";
+
+                // Push the resulting sub-expression back to the stack
                 st.push(exp);
             }
         }
+
+        // Final element of the stack is the fully parenthesized infix expression
         return st.peek();
     }
 }
+
