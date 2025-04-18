@@ -5,7 +5,7 @@ import java.util.Stack;
 public class InfixToPrefix {
 
     public static void main(String[] args) {
-        String infix = "(a+b)*c-d+f";
+        String infix = "a+b";
         String prefix = infixToPrefix(infix);
         System.out.println("Prefix: " + prefix); // Expected: -+a*b^-^f+gh-e^cdi
     }
