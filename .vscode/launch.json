@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Preorder",
+            "request": "launch",
+            "mainClass": "BinaryTrees.Preorder",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
+            "name": "Preorder",
+            "request": "launch",
+            "mainClass": "Preorder",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
+            "name": "Kthelement",
+            "request": "launch",
+            "mainClass": "Searching.Kthelement",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
