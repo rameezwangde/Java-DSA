@@ -6,6 +6,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RangeSumOptimal",
+            "request": "launch",
+            "mainClass": "Arrays.RangeSumOptimal",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
+            "name": "PrefixSum",
+            "request": "launch",
+            "mainClass": "Arrays.PrefixSum",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
+            "name": "CountGreater",
+            "request": "launch",
+            "mainClass": "Arrays.CountGreater",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
+            "name": "Rotate",
+            "request": "launch",
+            "mainClass": "Arrays.Rotate",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
+            "name": "PartialReverse",
+            "request": "launch",
+            "mainClass": "Arrays.PartialReverse",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
+            "name": "Reverse",
+            "request": "launch",
+            "mainClass": "Arrays.Reverse",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
+            "name": "Swapfn",
+            "request": "launch",
+            "mainClass": "Arrays.Swapfn",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
+            "name": "Swap",
+            "request": "launch",
+            "mainClass": "Arrays.Swap",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
+            "name": "Sum",
+            "request": "launch",
+            "mainClass": "Arrays.Sum",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
+            "name": "Input",
+            "request": "launch",
+            "mainClass": "Arrays.Input",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
             "name": "Preorder",
             "request": "launch",
             "mainClass": "BinaryTrees.Preorder",
