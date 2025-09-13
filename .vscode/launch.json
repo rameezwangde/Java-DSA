@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ValidPalindrome",
+            "request": "launch",
+            "mainClass": "Strings.ValidPalindrome",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
+            "name": "ReverseString",
+            "request": "launch",
+            "mainClass": "Strings.ReverseString",
+            "projectName": "DSA_ca3ca828"
+        },
+        {
+            "type": "java",
             "name": "RangeSumOptimal",
             "request": "launch",
             "mainClass": "Arrays.RangeSumOptimal",
