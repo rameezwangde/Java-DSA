@@ -4,6 +4,11 @@ class myEmployee{
    private  int id;
    private  String name;
 
+
+   public myEmployee(String myName,int myId){
+    id=myId;
+    name=myName;
+   }
    public String getName(){
         return name;
    }
@@ -21,10 +26,11 @@ class myEmployee{
 }
 public class Access {
     public static void main(String[] args) {
-      myEmployee  rameez=new myEmployee();
+      myEmployee  rameez=new myEmployee("coder",16);
     //   rameez.id=45;
     //   rameez.name="Wangde"; throws an error due to private access modifier
-    rameez.setName("rameezanmol");
+    // rameez.setName("rameezanmol");
     System.out.println(rameez.getName());
+    System.out.println(rameez.getId());
     }
 }
